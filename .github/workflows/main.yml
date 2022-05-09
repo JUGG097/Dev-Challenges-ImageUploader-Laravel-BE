@@ -16,5 +16,6 @@ jobs:
      
           script: |
             cd /var/www/imageuploader.juggyprojects.com/
-            git clone git@github.com:JUGG097/Dev-Challenges-ImageUploader-Laravel-BE.git 
+            git clone git@github.com:JUGG097/Dev-Challenges-ImageUploader-Laravel-BE.git
+            composer install
             echo 'Deployment successful to digital ocean'
