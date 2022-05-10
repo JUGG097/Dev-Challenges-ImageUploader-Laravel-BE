@@ -1,4 +1,4 @@
-# Image Uploader Laavel Backend Project (The backend for the Image Uploader Website deployed [here](https://imageuploader-adeoluwa.netlify.app/).)
+# Image Uploader Laravel Backend Project (The backend for the Image Uploader Website deployed [here](https://imageuploader-adeoluwa.netlify.app/).)
 
 This project was developed using `PHP` v "^8.0.2", `Laravel` v "^9.11", and `Cloudinary-labs/cloudinary-laravel` v "^1.0" libraries.
 
