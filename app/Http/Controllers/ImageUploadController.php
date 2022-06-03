@@ -5,24 +5,22 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 use Exception;
+use Illuminate\Support\Facades\Validator;
 
 class ImageUploadController extends Controller
 {
     function upload(Request $req)
     {
-        // Validate the uploaded file
-        if (!$req->hasFile('file')) {
-            return response()->json(['success' => false, 'error' => 'Image File not found'], 400);
+
+        $validator = Validator::make($req->all(), [
+            'file' => 'required|file|mimes:jpg,png,jpeg|max:5000',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json(['success' => false, 'error' => $validator->errors()], 400);
         }
 
         $imageFile = $req->file;
-        $imageFileType = $imageFile->getClientMimeType();
-
-        // Validate the uploaded file type
-        $acceptedFileTypes = ['image/png', 'image/jpeg', 'image/jpg'];
-        if (!in_array($imageFileType, $acceptedFileTypes)) {
-            return response()->json(['success' => false, 'error' => 'File type is not allowed'], 400);
-        }
 
         // Using Cloudinary Laravel SDK to upload
         try {
