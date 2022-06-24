@@ -1,5 +1,7 @@
 # Image Uploader Laravel Backend Project (The backend for the Image Uploader Website deployed [here](https://imageuploader-adeoluwa.netlify.app/).)
 
+[![Actions Status](https://github.com/JUGG097/Dev-Challenges-ImageUploader-Laravel-BE/workflows/Test_Deploy/badge.svg)](https://github.com/JUGG097/Dev-Challenges-ImageUploader-Laravel-BE/actions)
+
 This project was developed using `PHP` v "^8.0.2", `Laravel` v "^9.11", and `Cloudinary-labs/cloudinary-laravel` v "^1.0" libraries.
 
 Deployed on a `Digital Oceans` Droplet using `Github Actions` for CI/CD.
