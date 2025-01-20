@@ -34,15 +34,15 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }} # User of the server you want to ssh into
      
           script: |
-            # cd /var/www/imageuploader.juggyprojects.com/
-            # rm -r /var/www/imageuploader.juggyprojects.com/Dev-Challenges-ImageUploader-Laravel-BE
-            # git clone git@github.com:JUGG097/Dev-Challenges-ImageUploader-Laravel-BE.git
-            # cd Dev-Challenges-ImageUploader-Laravel-BE
-            # composer install --optimize-autoloader --no-dev
-            # cp /var/www/imageuploader.juggyprojects.com/.env /var/www/imageuploader.juggyprojects.com/Dev-Challenges-ImageUploader-Laravel-BE/.env
-            # chmod o+w ./storage/ -R
-            # php artisan config:cache
-            # php artisan route:cache
-            # php artisan view:cache
-            # systemctl reload nginx
-            # echo 'Deployment successful to digital ocean'
+          # cd /var/www/imageuploader.juggyprojects.com/
+          # rm -r /var/www/imageuploader.juggyprojects.com/Dev-Challenges-ImageUploader-Laravel-BE
+          # git clone git@github.com:JUGG097/Dev-Challenges-ImageUploader-Laravel-BE.git
+          # cd Dev-Challenges-ImageUploader-Laravel-BE
+          # composer install --optimize-autoloader --no-dev
+          # cp /var/www/imageuploader.juggyprojects.com/.env /var/www/imageuploader.juggyprojects.com/Dev-Challenges-ImageUploader-Laravel-BE/.env
+          # chmod o+w ./storage/ -R
+          # php artisan config:cache
+          # php artisan route:cache
+          # php artisan view:cache
+          # systemctl reload nginx
+          # echo 'Deployment successful to digital ocean'
