@@ -1,4 +1,4 @@
-# Image Uploader Laravel Backend Project (The backend for the Image Uploader Website deployed [here](https://imageuploader-adeoluwa.netlify.app/).)
+# Image Uploader Laravel Backend Project (The backend for the Image Uploader Website code [here](https://github.com/JUGG097/Dev-Challenges-ImageUploader-React-FE).)
 
 [![Actions Status](https://github.com/JUGG097/Dev-Challenges-ImageUploader-Laravel-BE/workflows/Test_Deploy/badge.svg)](https://github.com/JUGG097/Dev-Challenges-ImageUploader-Laravel-BE/actions)
 
@@ -6,7 +6,7 @@ This project was developed using `PHP` v "^8.0.2", `Laravel` v "^9.11", and `Clo
 
 Deployed on a `Digital Oceans` Droplet using `Github Actions` for CI/CD.
 
-The Image Uploader Website was deployed with `Netlify` link [here](https://imageuploader-adeoluwa.netlify.app/).
+The Image Uploader Website can be deployed with `Netlify`.
 
 Figma design was provided by [devChallenges.io](https://devchallenges.io/).
 
